@@ -32,7 +32,6 @@ import Foundation
                                      _ line: Int = #line,
                                      _ message: Any,
                                      _ color: UIColor? = nil) {
-        Swift.print(message)
         LogHelper.shared.handleLog(file: file, function: function, line: line, message: message, color: color)
     }
 }
@@ -44,7 +43,6 @@ public func swiftLog<T>(_ file: String = #file,
                         _ line: Int = #line,
                         _ message: T,
                         _ color: UIColor? = nil) {
-    Swift.print(message)
     LogHelper.shared.handleLog(file: file, function: function, line: line, message: message, color: color)
 }
 
